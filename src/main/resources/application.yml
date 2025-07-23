@@ -1,0 +1,6 @@
+server:
+  port: ${SERVER_PORT:8081}
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{100} userId=%X{userId} requestId=%X{requestId} remoteAddress=%X{remoteAddress} - %msg%n"

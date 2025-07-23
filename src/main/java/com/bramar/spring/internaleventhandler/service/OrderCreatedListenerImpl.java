@@ -17,7 +17,7 @@ public class OrderCreatedListenerImpl implements OrderCreatedListener {
         // Simulate a delay to mimic processing time
         log.info("Processing order created event asynchronously for ID: " + orderCreatedEvent.getOrderId());
         try {
-            Thread.sleep(10000); // 5 seconds delay
+            Thread.sleep(5000); // 5 seconds delay
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt(); // Restore interrupted status
             throw new RuntimeException("Order processing interrupted", e);
